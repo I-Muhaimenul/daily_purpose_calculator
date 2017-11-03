@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:id="@+id/loveLayout"
+    android:background="@drawable/lov"
+    tools:context="com.example.muhaimenulislam01521209669.allinonecalculator.Love">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="LOVE CALCULATOR"
+        android:id="@+id/textView6"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textStyle="bold"
+        android:textColor="#fe0000"
+        android:textSize="25dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Boy's Name:"
+        android:id="@+id/textView7"
+        android:layout_below="@+id/textView6"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="35dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="e.g.- Romeo"
+        android:ems="10"
+        android:id="@+id/bName"
+        android:gravity="center"
+        android:layout_alignBottom="@+id/textView7"
+        android:layout_alignLeft="@+id/bBirth"
+        android:layout_alignStart="@+id/bBirth" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Boys Birthday:"
+        android:id="@+id/textView13"
+        android:layout_below="@+id/bName"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="32dp" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/bBirth"
+        android:hint="e.g.- 8"
+        android:gravity="center"
+        android:layout_alignBottom="@+id/textView13"
+        android:layout_toRightOf="@+id/textView13"
+        android:layout_toEndOf="@+id/textView13" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Girl's Name:"
+        android:id="@+id/textView14"
+        android:layout_marginTop="58dp"
+        android:layout_below="@+id/textView13"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="e.g.- Juliet"
+        android:ems="10"
+        android:id="@+id/gName"
+        android:gravity="center"
+        android:layout_above="@+id/gBirth"
+        android:layout_alignLeft="@+id/gBirth"
+        android:layout_alignStart="@+id/gBirth" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Girl's Birthday:"
+        android:id="@+id/textView15"
+
+        android:layout_alignBottom="@+id/gBirth"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/gBirth"
+        android:hint="e.g.- 18"
+        android:gravity="center"
+        android:layout_below="@+id/textView14"
+        android:layout_toRightOf="@+id/textView15"
+        android:layout_toEndOf="@+id/textView15" />
+
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:text="Calculate"
+        android:id="@+id/button6"
+        android:onClick="onCalLove"
+        android:layout_marginTop="50dp"
+        android:layout_below="@+id/textView15"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Refresh"
+        android:id="@+id/button7"
+        android:onClick="onRefreshL"
+        android:layout_below="@+id/button6"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

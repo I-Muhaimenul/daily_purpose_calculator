@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:id="@+id/AgeLayout"
+    android:background="@drawable/sandclock"
+    tools:context="com.example.muhaimenulislam01521209669.allinonecalculator.Age">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Enter your birthdate:"
+        android:id="@+id/textView2"
+        android:layout_marginTop="31dp"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/textView4"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/bday"
+        android:hint="Day"
+        android:textColorHint="#f21111"
+        android:gravity="center"
+        android:layout_marginTop="31dp"
+        android:textColor="#FFFFFF"
+        android:layout_below="@+id/textView2"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:textColorHint="#f21111"
+        android:gravity="center"
+        android:id="@+id/bmonth"
+        android:hint="Month"
+        android:layout_alignTop="@+id/bday"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ffffff" />
+
+    <EditText
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:gravity="center"
+        android:id="@+id/byear"
+        android:hint="Year"
+        android:textColorHint="#f21111"
+        android:layout_alignBottom="@+id/bmonth"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:textColor="#ffffff" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Enter current date:"
+        android:id="@+id/textView3"
+        android:layout_marginTop="31dp"
+        android:textColor="#ffffff"
+        android:layout_below="@+id/bday"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Day"
+        android:textColorHint="#f21111"
+        android:id="@+id/cday"
+        android:layout_marginTop="32dp"
+        android:layout_below="@+id/textView3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#ffffff" />
+
+    <EditText
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:textColorHint="#f21111"
+        android:gravity="center"
+        android:hint="Month"
+        android:id="@+id/cmonth"
+        android:layout_alignTop="@+id/cday"
+        android:layout_alignLeft="@+id/bmonth"
+        android:layout_alignStart="@+id/bmonth"
+        android:textColor="#ffffff" />
+
+    <EditText
+        android:layout_width="90dp"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:gravity="center"
+        android:hint="Year"
+        android:textColorHint="#f21111"
+        android:id="@+id/cyear"
+        android:layout_alignTop="@+id/cmonth"
+        android:layout_alignRight="@+id/byear"
+        android:layout_alignEnd="@+id/byear"
+        android:textColor="#ffffff" />
+
+    <Button
+        android:layout_width="180dp"
+        android:layout_height="60dp"
+        android:text="Calculate Age"
+        android:id="@+id/calAge"
+        android:onClick="onCalAge"
+        android:layout_below="@+id/ageShow"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Your age is"
+        android:gravity="center"
+        android:id="@+id/ageShow"
+        android:layout_marginTop="31dp"
+        android:textSize="28dp"
+        android:textStyle="bold"
+        android:textColorHighlight="#1421b6"
+        android:textIsSelectable="false"
+        android:textColor="#ff000d"
+        android:layout_below="@+id/cmonth"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Refresh"
+        android:onClick="onRefreshA"
+        android:id="@+id/button2"
+        android:layout_below="@+id/calAge"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Today"
+        android:id="@+id/textView4"
+        android:textSize="25dp"
+        android:theme="@style/RtlOverlay.DialogWindowTitle.AppCompat"
+        android:textStyle="bold|normal"
+        android:textColor="#000be5"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>

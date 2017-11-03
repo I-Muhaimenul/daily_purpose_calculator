@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="@drawable/plain_back"
+    tools:context="com.example.muhaimenulislam01521209669.allinonecalculator.about">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="All in One Calculator \nVersion 1.01\n\n\n\n\nCREDIT\n\nMuhaimenul Islam"
+        android:id="@+id/textView16"
+        android:gravity="center"
+        android:layout_marginTop="47dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="#000000" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="B.Sc. Engg. (In Progress)\nDept. of Computer Science &amp; Engineering\nIUT-OIC\n\nFacebook: facebook.com/muhaimenul\nE-mail: i.muhaimen@gmail.com"
+        android:id="@+id/textView17"
+        android:gravity="center"
+        android:layout_below="@+id/textView16"
+        android:layout_centerHorizontal="true"
+        android:textColor="#000000" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:text="If you use it please give me feedback for further improvement. Your opinion is very important to me. Thanks! &#x263a;"
+        android:id="@+id/textView18"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:textColor="#000000" />
+</RelativeLayout>

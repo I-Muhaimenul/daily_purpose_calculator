@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.muhaimenulislam01521209669.allinonecalculator" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/calculator_icon"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme" >
+        <activity android:name=".Splash" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".Option" >
+        </activity>
+        <activity android:name=".Simple" >
+        </activity>
+        <activity android:name=".Age" >
+        </activity>
+        <activity android:name=".BMI" >
+        </activity>
+        <activity android:name=".StandardBMI" >
+        </activity>
+        <activity android:name=".MetricBmi" >
+        </activity>
+        <activity android:name=".Love" >
+        </activity>
+        <activity android:name=".LoveResult" >
+        </activity>
+        <activity android:name=".LoveSplash" >
+        </activity>
+        <activity android:name=".about" >
+        </activity>
+    </application>
+
+</manifest>
